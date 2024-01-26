@@ -1,4 +1,4 @@
-package com.artemnizhnyk.datageneratormicroservice.config;
+package com.artemnizhnyk.dataanalysismicroservice.config;
 
 import com.jcabi.xml.XML;
 import lombok.RequiredArgsConstructor;

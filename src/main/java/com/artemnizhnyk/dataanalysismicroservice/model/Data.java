@@ -1,4 +1,4 @@
-package com.artemnizhnyk.datageneratormicroservice.model;
+package com.artemnizhnyk.dataanalysismicroservice.model;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

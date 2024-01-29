@@ -1,5 +1,6 @@
 package com.artemnizhnyk.dataanalysismicroservice.model;
 
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -11,11 +12,15 @@ import java.time.LocalDateTime;
 @Setter
 @ToString
 @NoArgsConstructor
-public class Data {
+@Table(name = "data")
+@Entity
+public class Data extends BaseEntity {
 
     private Long sensorId;
     private LocalDateTime timestamp;
     private double measurement;
+    @Column(name = "type")
+    @Enumerated(EnumType.STRING)
     private MeasurementType measurementType;
 
     public enum MeasurementType {

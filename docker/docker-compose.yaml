@@ -60,7 +60,7 @@ services:
     volumes:
       - kafka-data:/var/lib/kafka/data
 
-  posgres:
+  postgres:
     image: 'postgres:15.1-alpine'
     networks:
       - app
